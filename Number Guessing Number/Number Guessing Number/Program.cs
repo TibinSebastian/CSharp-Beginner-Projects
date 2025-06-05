@@ -9,11 +9,11 @@ namespace MyTemplateProject
         {
             Console.Write("Guess a number : ");
             int number = Convert.ToInt32(Console.ReadLine());
-            
+
             Random random = new Random();
             int randomNumber = random.Next(0, 100);
 
-            if ( number == randomNumber)
+            if (number == randomNumber)
             {
                 Console.WriteLine("Guess Correct");
             }
