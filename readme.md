@@ -26,7 +26,7 @@ This repository contains a collection of beginner-friendly C# console applicatio
 
 ### 💳 4. Bank Account Simulation
 - **Description**: A basic banking system simulation with features like deposit, withdraw, and view balance.
-- **Concepts Used**: Class (`BankAccount`), methods, encapsulation, object creation.
+- **Concepts Used**: Class (`BankAccount`), methods.
 
 ---
 
