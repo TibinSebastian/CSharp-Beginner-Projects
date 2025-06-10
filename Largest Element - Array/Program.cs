@@ -1,5 +1,5 @@
 ﻿using System;
-//
+
 namespace Project
 {
     class Program
@@ -11,22 +11,15 @@ namespace Project
             string[] parts = data.Split(' ');
             int[] arr = Array.ConvertAll(parts, int.Parse);
             int size = arr.Length;
-            for (int i = 0; i < size-1; i++)
+            int large = arr[0];
+            for (int i = 0; i < size; i++)
             {
-                for (int j = 0; j < size - i - 1; j++)
+                if (large < arr[i])
                 {
-                    if (arr[j] < arr[j+1])
-                    {
-                        int swap = arr[j];
-                        arr[j] = arr[j+1];
-                        arr[j+1] = swap;
-                    }
+                    large = arr[i];
                 }
             }
-            foreach (int num in arr)
-            {
-                Console.Write(num + " ");
-            }
+            Console.WriteLine("Largest element is : " + large);
         }
     }
 }
